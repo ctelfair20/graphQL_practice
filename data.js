@@ -4,7 +4,7 @@ const Users = [
   {
     id: 1,
     name: "Cynthia Telfair",
-    email: "fik4christ@yahoo.com",
+    email: "me@yahoo.com",
     posts: [
       {
         id: 1,
