@@ -13,6 +13,16 @@ const Users = [
         link:
           "https://medium.com/@coderonfleek/debugging-an-ionic-android-app-using-chrome-dev-tools-6e139b79e8d2",
         author: 1
+        comments: [
+          {
+            id: 1,
+            message: 'great post1'
+          },
+          {
+            id: 2,
+            message: 'great post2'
+          }
+        ]
       },
       {
         id: 2,
@@ -21,6 +31,16 @@ const Users = [
         link:
           "https://medium.com/@coderonfleek/hosting-a-laravel-application-on-azure-web-app-b55e12514c46",
         author: 1
+        comments: [
+          {
+            id: 3,
+            message: 'great post3'
+          },
+          {
+            id: 4,
+            message: 'great post4'
+          }
+        ]
       }
     ]
   },

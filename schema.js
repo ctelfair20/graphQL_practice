@@ -19,12 +19,12 @@ const schema = buildSchema(`
     published: Boolean!
     link: String
     author: User!
+    comments: [Comment]
   }
 
   type Comment {
     id: ID!
-    author: User!
-    post: Post!
+    message: String
   }
 `);
 
