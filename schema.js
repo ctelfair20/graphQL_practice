@@ -1,9 +1,10 @@
 const { buildSchema } = require('graphql');
 
-const schema = buildSchema(`
-  type Query {
+const schema = buildSchema(
+  `type Query {
     users: [User!]!,
     user(id: Int!): User!
+    posts(id: Int!): Post
   }
 
   type User {
@@ -19,13 +20,13 @@ const schema = buildSchema(`
     published: Boolean!
     link: String
     author: User!
-    comments: [Comment]
+    comments: [Comment!]
   }
 
   type Comment {
     id: ID!
     message: String
-  }
-`);
+  }`
+);
 
 module.exports = schema;
