@@ -7,18 +7,24 @@ const schema = buildSchema(`
   }
 
   type User {
-  id: ID!
+    id: ID!
     name: String!
     email: String
     posts: [Post!]
   }
 
   type Post {
-  id: ID!
+    id: ID!
     title: String!
     published: Boolean!
     link: String
     author: User!
+  }
+
+  type Comment {
+    id: ID!
+    author: User!
+    post: Post!
   }
 `);
 
