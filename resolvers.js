@@ -8,7 +8,7 @@ const resolvers = {
     return Users;
   },
   user: async ({ id }, context) => {
-    /* .find() takes a function as input */
+    /* .find() takes a function as input and returns the firt match */
     return Users.find((user) => user.id == id)
   }
 }

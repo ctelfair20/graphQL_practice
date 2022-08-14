@@ -2,9 +2,8 @@ const { buildSchema } = require('graphql');
 
 const schema = buildSchema(
   `type Query {
-    users: [User!]!,
+    users: [User!]!
     user(id: Int!): User!
-    posts(id: Int!): Post
   }
 
   type User {
